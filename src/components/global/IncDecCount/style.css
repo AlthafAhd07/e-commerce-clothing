@@ -1,0 +1,36 @@
+.IncDecCounter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 150px;
+  min-width: 100px;
+  height: 45px;
+  background-color: var(--clr-nuetral-200);
+
+  color: var(--fc-heading);
+  font-weight: var(--fw-500);
+
+  border-radius: 5px;
+}
+.IncDecCounter > button {
+  background: none;
+
+  font-size: var(--fs-600);
+  font-weight: var(--fw-700);
+  color: var(--clr-primary-500);
+
+  cursor: pointer;
+  border: none;
+  will-change: scale;
+  transition: all 300ms ease-out;
+}
+.IncDecCounter > button:hover {
+  scale: 1.3;
+}
+
+@media screen and (max-width: 910px) {
+  .IncDecCounter {
+    width: 30%;
+  }
+}
